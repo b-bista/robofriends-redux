@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 class CounterButton extends Component {
 
-  constructor() {
-    super();
-    this.state = {
+  state = {
       count: 0
-    };
-  }
+  };
+
   // shouldComponentUpdate - allows us to override if we must update component
   shouldComponentUpdate(nextProps, nextState) {
     if (this.state.count !== nextState.count) {
